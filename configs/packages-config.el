@@ -7,6 +7,7 @@
         all-the-icons
         markdown-mode
         projectile
+        projectile-rails
         helm-projectile
         one-themes
         web-mode

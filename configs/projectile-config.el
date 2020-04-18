@@ -12,6 +12,7 @@
   :ensure t)
 (helm-projectile-on)
 
-;; (projectile-rails-global-mode)
+;; Projectile Rails mode
+(projectile-rails-global-mode)
 
 (provide 'projectile-config)
