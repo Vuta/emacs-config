@@ -19,4 +19,19 @@
   (setq make-backup-files nil) ; stop creating backup~ files
   (setq auto-save-default nil)) ; stop creating #autosave# file
 
+;; theme changer
+;; Run a function every 1 hour to toggle between light and dark theme
+(defun time-change ()
+  (lambda ()
+    (setq hour (nth 2 (decode-time (current-time))))
+    (if (and (> hour 6) (< hour 19))
+        (load-theme 'one-light t)
+      (load-theme 'one-dark t)
+      )))
+
+(defun run-theme-timer ()
+  (run-with-timer 0 3600 (time-change)))
+
+;;
+
 (provide 'functions)

@@ -55,6 +55,7 @@
 ;; call functions config
 (change-mode-line-color)
 (disable-backup-files)
+(run-theme-timer)
 
 ;; Other setup
 
@@ -74,3 +75,7 @@
 
 ;; Auto revert mode
 (global-auto-revert-mode 1)
+
+;; Show matching parenthesis
+(setq show-paren-delay 0)
+(show-paren-mode 1)
