@@ -10,6 +10,7 @@
         projectile-rails
         helm-projectile
         one-themes
+        doom-themes
         web-mode
         rainbow-mode))
 
