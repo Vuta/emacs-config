@@ -12,6 +12,7 @@
         one-themes
         doom-themes
         web-mode
+        elixir-mode
         rainbow-mode))
 
 (dolist (package packages-list)
