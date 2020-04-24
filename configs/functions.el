@@ -24,7 +24,7 @@
   (lambda ()
     (setq hour (nth 2 (decode-time (current-time))))
     (cond ((and (> hour 5) (< hour 11))
-            (load-theme 'one-light t))
+            (load-theme 'gruvbox-dark-medium t))
           ((and (>= hour 11) (<= hour 16))
             (load-theme 'one-dark t))
           ((and (>= hour 17) (<= hour 21))

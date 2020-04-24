@@ -11,6 +11,7 @@
         helm-projectile
         one-themes
         doom-themes
+        gruvbox-theme
         web-mode
         elixir-mode
         rainbow-mode))
