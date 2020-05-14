@@ -47,7 +47,8 @@
         markdown-config
         projectile-config
         webmode-config
-        rainbow-config))
+        rainbow-config
+        erlang-mode-config))
 
 (dolist (config-file config-files)
   (require config-file))
