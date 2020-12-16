@@ -13,6 +13,7 @@
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
 
 (package-initialize)
+;; (package-refresh-contents)
 
 (unless (file-exists-p "~/.emacs.d/elpa/archives/melpa")
   (package-refresh-contents))
@@ -48,7 +49,8 @@
         projectile-config
         webmode-config
         rainbow-config
-        erlang-mode-config))
+        erlang-mode-config
+        rust-mode-config))
 
 (dolist (config-file config-files)
   (require config-file))

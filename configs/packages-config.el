@@ -14,7 +14,8 @@
         gruvbox-theme
         web-mode
         elixir-mode
-        rainbow-mode))
+        rainbow-mode
+        rust-mode))
 
 (dolist (package packages-list)
   (unless (package-installed-p package)
