@@ -1,4 +1,6 @@
 ;; Change mode line color
+(setq evil-motion-state-modes (append evil-emacs-state-modes evil-motion-state-modes))
+(setq evil-emacs-state-modes nil)
 (defun change-mode-line-color ()
   (eval-when-compile (require 'cl))
   (lexical-let ((default-color (cons (face-background 'mode-line)
@@ -24,12 +26,12 @@
   (lambda ()
     (setq hour (nth 2 (decode-time (current-time))))
     (cond ((and (> hour 5) (< hour 11))
-            (load-theme 'gruvbox-dark-medium t))
+            (load-theme 'doom-vibrant t))
           ((and (>= hour 11) (<= hour 16))
-            (load-theme 'one-dark t))
+            (load-theme 'tango-dark t))
           ((and (>= hour 17) (<= hour 21))
             (load-theme 'doom-city-lights t))
-          (t (load-theme 'doom-vibrant t)))))
+          (t (load-theme 'gruvbox-dark-medium t)))))
 
 (defun run-theme-timer ()
   (run-with-timer 0 3600 (time-change)))
