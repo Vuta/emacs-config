@@ -70,9 +70,6 @@
 ;; C-c, C-x, C-v to copy, cut and paste
 (cua-mode 1)
 
-;; Display line numbers
-(global-display-line-numbers-mode)
-
 ;; Disable auto insert utf-8 in ruby-mode
 (setq ruby-insert-encoding-magic-comment nil)
 
