@@ -51,7 +51,8 @@
         rainbow-config
         erlang-mode-config
         rust-mode-config
-        magit-config))
+        magit-config
+        org-config))
 
 (dolist (config-file config-files)
   (require config-file))
