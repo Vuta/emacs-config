@@ -52,6 +52,7 @@
         erlang-mode-config
         rust-mode-config
         magit-config
+        go-mode-config
         org-config))
 
 (dolist (config-file config-files)
