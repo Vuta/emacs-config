@@ -57,7 +57,8 @@
         rust-mode-config
         magit-config
         go-mode-config
-        org-config))
+        org-config
+        yafolding-config))
 
 (dolist (config-file config-files)
   (require config-file))
