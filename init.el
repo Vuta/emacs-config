@@ -23,6 +23,11 @@
       (expand-file-name "configs" user-emacs-directory))
 (add-to-list 'load-path configs-path)
 
+(setq themes-path
+      (expand-file-name "themes" user-emacs-directory))
+(add-to-list 'load-path themes-path)
+(add-to-list 'custom-theme-load-path themes-path)
+
 ;; load custom.el
 (setq custom-file
       (expand-file-name "custom.el" user-emacs-directory))
@@ -49,9 +54,9 @@
         projectile-config
         webmode-config
         rainbow-config
-        erlang-mode-config
         rust-mode-config
         magit-config
+        go-mode-config
         org-config))
 
 (dolist (config-file config-files)
@@ -81,3 +86,6 @@
 ;; Show matching parenthesis
 (setq show-paren-delay 0)
 (show-paren-mode 1)
+
+;; increase GC threshold
+(setq gc-cons-threshold 80000000)
