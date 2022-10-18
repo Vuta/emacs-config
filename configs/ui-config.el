@@ -5,7 +5,7 @@
 (tooltip-mode -1)
 
 ;; Font
-(set-frame-font "Jetbrains Mono 13" nil t)
+(set-frame-font "Jetbrains Mono 15" nil t)
 
 ;; Vertical border
 ;;(set-face-background 'vertical-border "gray")
