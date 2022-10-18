@@ -71,7 +71,8 @@
 ;; Other setup
 
 ;; Indentation
-(setq-default tab-width 2 indent-tabs-mode nil)
+(setq-default tab-width 2)
+
 (define-key evil-insert-state-map (kbd "TAB") 'tab-to-tab-stop)
 
 ;; Cua mode
