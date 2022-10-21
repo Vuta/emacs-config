@@ -58,7 +58,8 @@
         magit-config
         go-mode-config
         org-config
-        yafolding-config))
+        yafolding-config
+				restclient-config))
 
 (dolist (config-file config-files)
   (require config-file))
