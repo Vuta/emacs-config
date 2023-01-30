@@ -12,7 +12,7 @@
  '(initial-frame-alist '((fullscreen . maximized)))
  '(line-number-mode t)
  '(package-selected-packages
-	 '(restclient yafolding go-mode rust-mode ace-jump-mode use-package gnu-elpa-keyring-update all-the-icons one-themes magit helm-ag markdown-mode apib-mode company-mode helm-projectile helm rainbow-mode caroline-theme slim-mode web-mode projectile-rails zenburn-themes dracula-theme alchemist ample-theme neotree projectile evil)))
+	 '(yaml-mode restclient yafolding go-mode rust-mode ace-jump-mode use-package gnu-elpa-keyring-update all-the-icons one-themes magit helm-ag markdown-mode apib-mode company-mode helm-projectile helm rainbow-mode caroline-theme slim-mode web-mode projectile-rails zenburn-themes dracula-theme alchemist ample-theme neotree projectile evil)))
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
