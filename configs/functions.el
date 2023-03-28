@@ -34,4 +34,37 @@
   (run-with-timer 0 3600 (time-change)))
 ;;
 
+(defun my/indent-region (num-spaces)
+  "Indent the selected region by NUM-SPACES spaces."
+  (interactive "p")
+  (let ((mark (mark)))
+    (if mark
+        (let ((column (current-column))
+              (start (region-beginning))
+              (end (region-end))
+              (offset (- (line-beginning-position) (point))))
+          (save-excursion
+            (goto-char start)
+            (while (< (point) end)
+              (indent-line-to (+ num-spaces (current-indentation)))
+              (forward-line))
+            (goto-char (+ offset start))
+            (set-mark mark)
+            (goto-char (+ offset end))
+            (setq deactivate-mark nil)))
+      (message "No region selected."))))
+
+(defun my/indent-region-forward ()
+  "Indent the selected region forward based on current tab width."
+  (interactive)
+  (my/indent-region tab-width))
+
+(defun my/indent-region-backward ()
+	"Indent the selected region backward based on current tab width."
+	(interactive)
+	(my/indent-region (- tab-width)))
+
+(global-set-key (kbd "C-c C-=") 'my/indent-region-forward)
+(global-set-key (kbd "C-c C--") 'my/indent-region-backward)
+
 (provide 'functions)
