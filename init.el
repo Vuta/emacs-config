@@ -60,7 +60,8 @@
         org-config
         yafolding-config
         yaml-config
-        restclient-config))
+        restclient-config
+        perspective-config))
 
 (dolist (config-file config-files)
   (require config-file))
@@ -74,6 +75,7 @@
 
 ;; Indentation
 (setq-default tab-width 2)
+(setq-default indent-tabs-mode nil)
 
 (define-key evil-insert-state-map (kbd "TAB") 'tab-to-tab-stop)
 
