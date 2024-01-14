@@ -61,7 +61,8 @@
         yafolding-config
         yaml-config
         restclient-config
-        perspective-config))
+        perspective-config
+        protobuf-mode))
 
 (dolist (config-file config-files)
   (require config-file))
