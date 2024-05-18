@@ -7,6 +7,8 @@
 ;; Font
 (set-frame-font "Jetbrains Mono 15" nil t)
 
+(setq-default blink-cursor-mode nil)
+
 ;; Vertical border
 ;;(set-face-background 'vertical-border "gray")
 ;; (set-face-foreground 'vertical-border (face-background 'vertical-border))
