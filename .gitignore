@@ -4,3 +4,4 @@ projectile-bookmarks.eld
 configs/*.el~
 transient
 projectile.cache
+perspective_state

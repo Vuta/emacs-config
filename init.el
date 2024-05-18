@@ -43,7 +43,6 @@
 (setq config-files
       '(packages-config
         evil-config
-        my-theme-config
         ace-jump-config
         helm-config
         neotree-config

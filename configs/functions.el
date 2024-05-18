@@ -27,8 +27,8 @@
   (lambda ()
     (setq hour (nth 2 (decode-time (current-time))))
     (cond ((and (> hour 6) (< hour 19))
-            (load-theme 'gruvbox-light-soft t))
-          (t (load-theme 'gruvbox-dark-soft t)))))
+            (load-theme 'nothing t))
+          (t (load-theme 'nothing t)))))
 
 (defun run-theme-timer ()
   (run-with-timer 0 3600 (time-change)))
