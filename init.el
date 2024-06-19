@@ -61,7 +61,8 @@
         yaml-config
         restclient-config
         perspective-config
-        protobuf-mode))
+        protobuf-mode
+        idle-org-agenda))
 
 (dolist (config-file config-files)
   (require config-file))
