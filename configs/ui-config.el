@@ -6,6 +6,7 @@
 
 ;; Font
 (set-frame-font "Jetbrains Mono 15" nil t)
+(setq-default line-spacing 0.2)
 
 (setq-default blink-cursor-mode nil)
 
