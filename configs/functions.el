@@ -27,8 +27,8 @@
   (lambda ()
     (setq hour (nth 2 (decode-time (current-time))))
     (cond ((and (> hour 6) (< hour 19))
-            (load-theme 'nothing t))
-          (t (load-theme 'nothing t)))))
+            (load-theme 'eink t))
+          (t (load-theme 'eink t)))))
 
 (defun run-theme-timer ()
   (run-with-timer 0 3600 (time-change)))

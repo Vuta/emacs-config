@@ -16,5 +16,6 @@
 
 ;; Words wrap
 ;; (global-visual-line-mode f)
+(setq-default fill-column 80)
 
 (provide 'ui-config)
