@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (use-package perspective
   :ensure t
   :bind

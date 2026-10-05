@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;; Projectile
 (use-package projectile
   :ensure t

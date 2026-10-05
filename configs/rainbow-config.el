@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;; Rainbow mode
 (define-globalized-minor-mode global-rainbow-mode rainbow-mode
   (lambda () (rainbow-mode 1)))

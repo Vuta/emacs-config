@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; install custome packages
 (setq packages-list
       '(ace-jump-mode
@@ -9,7 +11,6 @@
         projectile
         projectile-rails
         helm-projectile
-        one-themes
         doom-themes
         gruvbox-theme
         web-mode

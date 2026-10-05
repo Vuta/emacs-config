@@ -1,4 +1,4 @@
-;;; eink-theme.el --- E Ink color theme
+;;; eink-theme.el --- E Ink color theme  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2013-2016 Marian Schubert
 

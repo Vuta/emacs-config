@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (use-package yafolding
   :ensure t)
 (add-hook 'ruby-mode-hook 'yafolding-mode)

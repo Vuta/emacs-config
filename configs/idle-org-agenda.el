@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;;; idle-org-agenda.el --- Shows your agenda when editor is idle.
 
 ;; Copyright (C) 2010 John Wiegley
@@ -36,6 +37,8 @@
 ;; Please see README.md from the same repository for documentation.
 
 ;;; Code:
+
+;; -*- lexical-binding: t; -*-
 
 (require 'org-agenda)
 

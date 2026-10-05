@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; Setup evil mode
 (setq evil-want-C-i-jump nil)
 (use-package evil

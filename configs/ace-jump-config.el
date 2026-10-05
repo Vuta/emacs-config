@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;; Ace Jump Mode
 (use-package ace-jump-mode
   :ensure t

@@ -1,3 +1,4 @@
+;;; -*- lexical-binding: t; -*-
 ;; Change mode line color
 (setq evil-motion-state-modes (append evil-emacs-state-modes evil-motion-state-modes))
 (setq evil-emacs-state-modes nil)
